@@ -1,60 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap");
 /* Heading */
-.fet{
-    width: 80%;
+.fet {
+  width: 80%;
 }
-.frame{
-    height: 5rem;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    border-radius: 2em;
-    margin-top: 1rem;
+.frame {
+  height: 5rem;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 2em;
+  margin-top: 1rem;
 }
-.title{
-    font-size: 2.5rem;
-    color: #3f87a6;
-    font-weight: 900;
-    font-family: 'Gentium Book Plus', serif;
+.title {
+  font-size: 2.5rem;
+  color: #3f87a6;
+  font-weight: 900;
+  font-family: "Gentium Book Plus", serif;
 }
 
 /* Input Field form */
-.alignment{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.alignment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .inputField {
-    flex: 1;
-    border:none;
-    border-radius: 0;
-    height: 2.3em;
-    width: 30rem;
-    overflow:hidden;
+  flex: 1;
+  border: none;
+  border-radius: 0;
+  height: 2.3em;
+  width: 30rem;
+  overflow: hidden;
 }
-.input:focus{
-    outline: none;
+.input:focus {
+  outline: none;
 }
-.get{
-    border:none;
-    height: 2.3em;
-    background-color: bisque;
-    padding: 0 2em;
-    font-weight: 600;
+.get {
+  border: none;
+  height: 2.3em;
+  background-color: bisque;
+  padding: 0 2em;
+  font-weight: 600;
 }
 /* Display todos */
-#list{
-    list-style: none;
-    }
+.kett {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 500;
+  margin-bottom: 7rem;
+}
+.jett {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+.setting {
+  word-wrap: break-word;
+  width: 17rem;
+  color: #559adf;
+  margin: 0.7em 0;
+  padding: 0.1rem 0.5rem;
+  background-color: #e20ae21d;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+.styling {
+  height: 2rem;
+  width: 2rem;
+  color: rgba(238, 105, 105, 0.662);
+  margin: 0.7em 0;
+  border: none;
+  background-color: #ffe7bf;
+}
 
 /* Footer */
-.het{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(234, 155, 179);
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    font-size: larger;
+.het {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(234, 155, 179);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  font-size: larger;
 }

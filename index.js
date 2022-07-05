@@ -1,25 +1,24 @@
-const form=document.querySelector("#submission");
-let list=document.querySelector('#list');
-const items=document.querySelector('#todo');
-form.addEventListener('submit',function(e){
+const form = document.querySelector("#submission");
+let list = document.querySelector('#todo-display');
+const items = document.querySelector('#todo');
+
+form.addEventListener('submit', function (e) {
     e.preventDefault();
-    let todo=items.value;
-    let newLi=document.createElement('li');
-    newLi.innerHTML=`
-    <div class='container' style="width:40rem;">
-          <div class="row">
-        <div class="col" style="text-align: center; word-wrap: break-word;">
-          ${ todo} 
-        </div>
-        <div class="col">
-        <button id="btn1">X</button>
-        </div>
-    </div>
-    </div>
-`
-    list.append(newLi);
-    items.value="";
-})
-btn1.addEventListener('click',function(){
-    list.innerHTML="";
+    let todo = items.value;
+    let newTodo = document.createElement('div');
+    let remove = document.createElement('button');
+    newTodo.classList.add('setting');
+    remove.classList.add('styling');
+    newTodo.innerText = todo;
+    remove.innerHTML = "<i class='fas fa-trash'></i>"
+    list.append(newTodo);
+    list.append(remove);
+    items.value = "";
+    remove.addEventListener('click', function () {
+        newTodo.style.textDecoration = "line-through";
+        newTodo.style.color = "white";
+        newTodo.style.backgroundColor = "#937DC2";
+        remove.innerHTML = "<i class='fas fa-check'></i>";
+    })
+
 })
