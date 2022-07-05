@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap");
 /* Heading */
-.fet {
-  width: 80%;
-}
 .frame {
+  width: 80%;
   height: 5rem;
   background: rgb(238, 174, 202);
   background: radial-gradient(
@@ -89,4 +87,18 @@
   text-align: center;
   padding: 1em 0;
   font-size: larger;
+}
+/* Media Queries */
+@media (max-width: 600px) {
+    .frame{
+        height:3.4rem;
+        width: 60%;
+    }
+    .title {
+       font-size: 2rem;
+    }
+    .inputField{
+        width: 10rem;
+    }
+  
 }
